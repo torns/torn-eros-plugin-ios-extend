@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name         = "TornErosPluginBaidu"
-  s.version      = "1.0.0"
+  s.version      = "1.0.3"
   s.summary      = "TornErosPluginBaidu Source ."
   s.homepage     = 'https://github.com/torns/torn-eros-plugin-ios-cqbaidu'
   s.license      = "MIT"
