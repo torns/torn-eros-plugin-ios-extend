@@ -1,2 +1,2 @@
-# eros-plugin-ios-wxshare
-微信分享，微信授权登录功能；
+# torn-eros-plugin-ios-cqbaidu
+重庆百度拓展功能；
