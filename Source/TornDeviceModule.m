@@ -2,6 +2,7 @@
 #import <WeexPluginLoader/WeexPluginLoader/WeexPluginLoader.h>
 #import "BMMediatorManager.h"
 #import "NSDictionary+Util.h"
+#import "TornDeviceInfoModule.h"
 
 WX_PlUGIN_EXPORT_MODULE(toDevice, TornDeviceModule)
 
@@ -12,9 +13,10 @@ WX_PlUGIN_EXPORT_MODULE(toDevice, TornDeviceModule)
 WX_EXPORT_METHOD_SYNC(@selector(getDeviceInfo))
 
 /** 获取设备信息 */
--(BOOL)getDeviceInfo
+-(NSDictionary *)getDeviceInfo
 {
-    return true;
+    NSDictionary *infoModel = @{@"zs":@"zhaosi",@"zs":@"zhangsan",@"ls":@"lisi",@"bz":@"banzhang"};
+    return infoModel;
 }
 
 @end
