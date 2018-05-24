@@ -15,7 +15,20 @@ WX_EXPORT_METHOD_SYNC(@selector(getDeviceInfo))
 /** 获取设备信息 */
 -(NSDictionary *)getDeviceInfo
 {
-    NSDictionary *infoModel = @{@"zs":@"zhaosi",@"zs":@"zhangsan",@"ls":@"lisi",@"bz":@"banzhang"};
+    /** 设备宽度 */
+    int deviceWidth=0;
+    /** 设备高度 */
+    int deviceHeight=0;
+    /** 屏幕放大倍数 */
+    int scale=0;
+    
+    CGRect rect_screen = [[UIScreenmainScreen]bounds];
+
+
+    NSDictionary *infoModel = @{}; 
+    [infoModel addObject:[NSNumber numberWithInt:deviceWidth] forKey:@"deviceWidth"];
+    [infoModel addObject:[NSNumber numberWithInt:deviceHeight] forKey:@"deviceHeight"];
+    [infoModel addObject:[NSNumber numberWithInt:scale] forKey:@"scale"];
     return infoModel;
 }
 
